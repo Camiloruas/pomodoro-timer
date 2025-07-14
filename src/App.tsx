@@ -1,15 +1,32 @@
 import { Heading } from "./components/Heading";
-
-import "./styles/theme.css";
+import { Container } from "./components/Container";
 import "./styles/global.css";
+import "./styles/theme.css";
 
 export function App() {
   return (
-    <div>
-      <Heading />
+    <>
+      <Container> 
+        <Heading> Testando meu Componente</Heading>
+        <section> LOGO</section>
+      </Container>
 
-      <h1>Olá Mundo</h1>
-      <p>Mantenha o foco e gerencie seu tempo com eficiência!</p>
-    </div>
+      <Container> 
+        <section> Menu</section>
+      </Container>
+
+
+      <div className="container">
+        <div className=" content">
+          <section>FORM</section>
+        </div>
+      </div>
+
+      <div className="container">
+        <div className=" content">
+          <section>FOOTER</section>
+        </div>
+      </div>
+    </>
   );
 }
