@@ -10,7 +10,7 @@ export function Logo() {
           <span>Chronos</span>
         </a>
       </div>
-      ;
+      
     </div>
   );
 }
