@@ -10,13 +10,13 @@ export function Menu() {
           <HouseIcon />
         </a>
         <a className={styles.menuLink} href="#">
+          <HistoryIcon />
+        </a>
+        <a className={styles.menuLink} href="#">
           <SettingsIcon />
         </a>
         <a className={styles.menuLink} href="#">
           <SunIcon />
-        </a>
-        <a className={styles.menuLink} href="#">
-          <HistoryIcon />
         </a>
       </div>
     </nav>

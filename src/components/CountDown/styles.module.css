@@ -1,7 +1,6 @@
 .container {
   display: flex;
   justify-content: center;
-  align-items: center;
   font-size: clamp(8rem, 25vw, 16rem);
   font-weight: bold;
   line-height: 1.3;
