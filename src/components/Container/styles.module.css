@@ -1,20 +1,39 @@
+/* 
+  Define um container que ocupa toda a largura da tela.
+  Esta classe não está sendo usada atualmente no componente.
+*/
 .container-fluid {
   max-width: auto;
 }
 
+/* 
+  Define o estilo para o contêiner principal.
+*/
 .container {
+  /* Define uma largura máxima para o container, evitando que ele fique muito largo em telas grandes. */
   max-width: 98rem;
+  /* Centraliza o container horizontalmente na página. */
   margin: auto;
+  /* Ativa o layout Flexbox para alinhar os itens filhos. */
   display: flex;
+  /* Alinha os itens filhos verticalmente ao centro do container. */
   align-items: center;
+  /* Alinha os itens filhos horizontalmente ao centro do container. */
   justify-content: center;
+  /* Organiza os itens filhos em uma coluna (um abaixo do outro). */
   flex-direction: column;
+  /* Adiciona um espaçamento de 2.4rem entre os itens filhos. */
   gap: 2.4rem;
-  /* min-height: 100vh; 
-  width: 100%; */
+  /* As linhas comentadas abaixo são exemplos de estilos que poderiam ser aplicados. */
+  /* min-height: 100vh; */
+  /* width: 100%; */
 }
 
+/*
+  Define o estilo para o contêiner que envolve diretamente os "children".
+  Atualmente, todas as regras estão comentadas, então esta classe não tem efeito visual.
+*/
 .children {
-  /* width: 100%;
-  max-width: 600px;  */
+  /* width: 100%; */
+  /* max-width: 600px;  */
 }
