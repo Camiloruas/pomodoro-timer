@@ -1,27 +1,49 @@
+/* Estilo base para o elemento input. */
 .input {
+  /* Define um fundo transparente. */
   background-color: transparent;
+  /* Centraliza o texto digitado dentro do input. */
   text-align: center;
+  /* Define o tamanho da fonte. */
   font-size: 1.8rem;
+  /* Adiciona espaçamento interno (padding). */
   padding: 0.8rem;
+  /* Remove a borda padrão. */
   border: 0.2rem solid var(--primary);
+  /* Define a cor do texto. As cores são variáveis CSS definidas globalmente. */
   color: var(--text-default);
+  /* Remove a borda de foco padrão do navegador. */
   outline: none;
+  /* Garante que a borda seja transparente inicialmente. */
   border: 0.2rem solid transparent;
+  /* Adiciona apenas uma borda na parte inferior. */
   border-bottom: 0.2rem solid var(--primary);
+  /* Adiciona uma transição suave para todas as propriedades que mudam. */
   transition: all 0.1s ease-in-out;
 }
 
+/* Estilo aplicado quando o input está em foco (selecionado). */
 .input:focus {
+  /* Adiciona bordas arredondadas. */
   border-radius: 0.8rem;
+  /* Mostra uma borda completa ao redor do input quando focado. */
   border: 0.2rem solid var(--primary);
 }
 
+/* Estilo para o texto do placeholder (dica dentro do input). */
 .input::placeholder {
+  /* Define a cor do texto do placeholder. */
   color: var(--gray-500);
+  /* Define um tamanho de fonte menor para o placeholder. */
   font-size: 1.4rem;
+  /* Deixa o texto do placeholder em itálico. */
   font-style: italic;
 }
+
+/* Estilo aplicado quando o input está desabilitado (atributo `disabled`). */
 .input:disabled {
+  /* Muda a cor da borda inferior para indicar que está desabilitado. */
   border-bottom: 0.2rem solid var(--disabled);
+  /* Muda a cor do texto para uma cor mais suave. */
   color: var(--text-muted);
 }
