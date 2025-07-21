@@ -12,7 +12,7 @@ type AvailableThemes = "dark" | "light";
 
 export function Menu() {
   const [theme, setTheme] = useState<AvailableThemes>(() => {
-    const storageTheme =
+    const storageTheme = 
       (localStorage.getItem("theme") as AvailableThemes) || "dark";
     return storageTheme;
   });
@@ -38,7 +38,7 @@ export function Menu() {
   }, [theme]);
 
   return (
-    <nav className={styles.menu}>
+    <nav className={styles.menu}> 
       <div className={styles.menuItems}>
         <a
           className={styles.menuLink}
@@ -72,6 +72,7 @@ export function Menu() {
           onClick={handleThemeChange}
         >
           {nextThemeIcon[theme]}
+
         </a>
       </div>
     </nav>
