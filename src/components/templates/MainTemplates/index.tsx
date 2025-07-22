@@ -1,10 +1,11 @@
-import { Menu } from "lucide-react";
 import { Container } from "../../Container";
 import { CountDown } from "../../CountDown";
 import { Footer } from "../../Footer";
 import { Logo } from "../../Logo";
-import "./styles/global.css";
-import "./styles/theme.css";
+import { Menu } from "../../Menu";
+
+import "../../../styles/global.css";
+import "../../../styles/theme.css";
 
 type MainTemplateProps = {
   children: React.ReactNode;
@@ -21,11 +22,7 @@ export function MainTemplate({ children }: MainTemplateProps) {
         <Menu />
       </Container>
 
-      <Container>
-        <CountDown />
-      </Container>
-
-      <Container>{chikdren} </Container>
+      <Container>{children}</Container>
 
       <Container>
         <Footer />
