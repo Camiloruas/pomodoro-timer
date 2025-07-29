@@ -4,16 +4,18 @@ import { MainForm } from "../../components/MainForm";
 import { MainTemplate } from "../../components/templates/MainTemplates";
 import type { TaskStateModel } from "../../models/TaskStateModel";
 
-type HomeProps = {
+export type HomeProps = {
   state: TaskStateModel;
   setState: React.Dispatch<React.SetStateAction<TaskStateModel>>;
 };
 export function Home(props: HomeProps) {
-  console.log(props);
+  const { state, setState } = props;
   return (
     <MainTemplate>
       <Container>
-        <CountDown />
+        <CountDown
+          formattedSecondsRemaining={state.formattedSecondsRemaining}
+        />
       </Container>
 
       <Container>
