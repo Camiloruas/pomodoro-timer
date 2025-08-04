@@ -9,17 +9,15 @@ export type HomeProps = {
   setState: React.Dispatch<React.SetStateAction<TaskStateModel>>;
 };
 export function Home(props: HomeProps) {
-  const { state, setState } = props;
+  // const { state, setState } = props;
   return (
     <MainTemplate>
       <Container>
-        <CountDown
-          formattedSecondsRemaining={state.formattedSecondsRemaining}
-        />
+        <CountDown {...props} />
       </Container>
 
       <Container>
-        <MainForm />
+        <MainForm {...props} />
       </Container>
     </MainTemplate>
   );

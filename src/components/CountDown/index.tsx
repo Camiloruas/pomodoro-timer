@@ -1,5 +1,5 @@
+import type { HomeProps } from "../../pages/Home";
 import styles from "./styles.module.css";
-import { HomeProps } from "../../pages/Home";
 
 export function CountDown({ state }: HomeProps) {
   return (
