@@ -4,19 +4,6 @@ import { Home } from "./pages/Home";
 import "./styles/global.css";
 import "./styles/theme.css";
 
-// export type TaskStateModel = {
-//   task: TaskModel[]; // hitórico,  MainForm
-//   secondsRemaing: number; // Home, countDow, Histórico, MainForm, Botton
-//   formattedSecondsRemaining: string; // Título, CountDown
-//   activeTask: TaskModel | null; // countDow, Histórico, MainForm, Botton
-//   currentCycle: number; // Home
-//   config: {
-//     workTime: number; //MainForm
-//     shortBreakTime: number; //MainForm
-//     longBreakTime: number; //MainForm
-//   };
-// };
-
 const initialState: TaskStateModel = {
   task: [],
   secondsRemaing: 0,
