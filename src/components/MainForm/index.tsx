@@ -4,11 +4,17 @@ import { Cycles } from "../Cycles";
 import { Input } from "../Input";
 
 export function MainForm() {
+  function handleCreateNewTask(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+
+    console.log("DEU CERTO");
+  }
+
   return (
-    <form className="form" action="">
+    <form onSubmit={handleCreateNewTask} className="form" action="">
       <div className="formRow">
         <Input
-          LabelTex="task"
+          labelText="task"
           id="meuInput"
           type="text"
           placeholder="Digite algo"
@@ -16,7 +22,7 @@ export function MainForm() {
       </div>
 
       <div className="formRow">
-        <p>Lorem ipsum dolor sit.</p>
+        <p>Próximo intervalo é de 25 min</p>
       </div>
 
       <div className="formRow">
