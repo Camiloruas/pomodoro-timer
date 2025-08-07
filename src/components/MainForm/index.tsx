@@ -44,7 +44,6 @@ export function MainForm() {
     setState((prevState) => {
       return {
         ...prevState,
-        config: { ...prevState.config },
         activeTask: newTask,
         currentCycle: nextCycle,
         secondsRemaining, // Conferir
@@ -101,7 +100,6 @@ export function MainForm() {
             title="Iniciar nova tarefa"
             type="submit"
             icon={<PlayCircleIcon />}
-            key="botao_submit"
           />
         )}
 
@@ -113,7 +111,6 @@ export function MainForm() {
             color="red"
             icon={<StopCircleIcon />}
             onClick={handleInterruptTask}
-            key="botao_button"
           />
         )}
       </div>
