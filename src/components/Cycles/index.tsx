@@ -1,6 +1,6 @@
 import { useTaskContext } from "../../contexts/TaskContext/useTaskContext";
 import { getNextCycle } from "../../utils/getNextCycle";
-import { getNextCycleType } from "../../utils/getNextCyclesType";
+import { getNextCycleType } from "../../utils/getNextCycleType";
 import styles from "./styles.module.css";
 
 export function Cycles() {
