@@ -7,12 +7,13 @@ import {
 } from "lucide-react";
 import { useEffect, useState } from "react";
 import styles from "./styles.module.css";
+import { Link } from "react-router";
 
 type AvailableThemes = "dark" | "light";
 
 export function Menu() {
   const [theme, setTheme] = useState<AvailableThemes>(() => {
-    const storageTheme = 
+    const storageTheme =
       (localStorage.getItem("theme") as AvailableThemes) || "dark";
     return storageTheme;
   });
@@ -38,16 +39,16 @@ export function Menu() {
   }, [theme]);
 
   return (
-    <nav className={styles.menu}> 
+    <nav className={styles.menu}>
       <div className={styles.menuItems}>
-        <a
+        <Link
           className={styles.menuLink}
-          href="#"
+          to="/"
           aria-label="Home Page"
           title="Home Page"
         >
           <HouseIcon />
-        </a>
+        </Link>
         <a
           className={styles.menuLink}
           href="#"
@@ -72,7 +73,6 @@ export function Menu() {
           onClick={handleThemeChange}
         >
           {nextThemeIcon[theme]}
-
         </a>
       </div>
     </nav>
