@@ -2,6 +2,7 @@
 // O uso de ".module.css" garante que as classes CSS sejam escopadas localmente para este componente.
 import { Link } from "react-router";
 import styles from "./styles.module.css";
+import { RouterLink } from "../RouterLink";
 
 // Declaração do componente funcional 'Footer'.
 // Este componente não recebe nenhuma propriedade (props).
@@ -14,9 +15,9 @@ export function Footer() {
     <footer className={styles.footer}>
       {/* Um link '<a>' que direciona o usuário para uma página (atualmente vazia, href="") 
           para entender a técnica Pomodoro. */}
-      <Link to="/about-pomodoro">
+      <RouterLink href="/about-pomodoro">
         Entenda como funciona a tecnica Pomodoro{" "}
-      </Link>
+      </RouterLink>
 
       {/* Nota: O uso de um '<footer>' dentro de outro '<footer>' não é uma prática padrão
           e pode ser semanticamente incorreto. Geralmente, um 'div' ou 'p' seria mais apropriado aqui. */}
