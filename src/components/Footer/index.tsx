@@ -1,6 +1,5 @@
 // Importa os estilos CSS do arquivo "styles.module.css".
 // O uso de ".module.css" garante que as classes CSS sejam escopadas localmente para este componente.
-import { Link } from "react-router";
 import styles from "./styles.module.css";
 import { RouterLink } from "../RouterLink";
 
