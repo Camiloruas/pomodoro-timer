@@ -1,0 +1,10 @@
+.buttinContainer button {
+  min-width: auto;
+  margin: 0;
+  padding: 1rem;
+}
+
+.buttinContainer button svg {
+  width: 2rem;
+  height: 2rem;
+}

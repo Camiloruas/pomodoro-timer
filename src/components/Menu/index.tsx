@@ -49,14 +49,14 @@ export function Menu() {
         >
           <HouseIcon />
         </RouterLink>
-        <a
+        <RouterLink
           className={styles.menuLink}
-          href="#"
+          href="/history"
           aria-label="Histórico "
           title="Histórico"
         >
           <HistoryIcon />
-        </a>
+        </RouterLink>
         <a
           className={styles.menuLink}
           href="#"
