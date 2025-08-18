@@ -60,7 +60,7 @@ export function MainForm() {
           LabelTex="task"
           id="meuInput"
           type="text"
-          placeholder="Digite algo"
+          placeholder="Digite aqui a sua Tarefa"
           ref={taskNameInput}
           disabled={!!state.activeTask}
           defaultValue={lastTaskName}
