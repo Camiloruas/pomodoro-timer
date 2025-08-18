@@ -38,6 +38,11 @@ export function History() {
     }));
   }, [state.tasks]);
 
+     useEffect(() => {
+    document.title = 'Histórico - Focus Pomodoro';
+  }, []);
+
+
   useEffect(() => {
     if (!confirmClearHistory) return;
 

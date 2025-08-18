@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { Container } from "../../components/Container";
 import { GenericHtml } from "../../components/GenericHtml";
 import { Heading } from "../../components/Heading";
@@ -5,11 +6,13 @@ import { RouterLink } from "../../components/RouterLink";
 import { MainTemplate } from "../../components/templates/MainTemplates";
 
 export function NotFound() {
+  useEffect(() => {
+    document.title = "Página não encontrada - Focus Pomodoro";
+  }, []);
   return (
     <MainTemplate>
       <Container>
         <GenericHtml>
-          <h1>Página não encontrada</h1>
           <Heading>404 - Página não encontrada 🚀</Heading>
           <p>
             Opa! Parece que a página que você está tentando acessar não existe.
