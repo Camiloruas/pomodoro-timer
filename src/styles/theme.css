@@ -27,24 +27,24 @@
 
 :root {
   /* 🎭 Tons de Cinza (cores dinâmicas que mudam entre claro/escuro) */
-  --gray-100: #e6e9f0; /* Cinza mais claro (usado para fundos no modo escuro) */
-  --gray-200: #cdd3e1;
-  --gray-300: #aab3cc;
-  --gray-400: #555f7d;
-  --gray-500: #454f6a;
-  --gray-600: #363d56;
-  --gray-700: #272f43; /* Bordas e separadores */
-  --gray-800: #181f2e; /* Fundo de cartões e áreas destacadas */
-  --gray-900: #0a0f1a; /* Fundo principal do site */
+  --gray-100: #E2E8F0;
+  --gray-200: #CBD5E0;
+  --gray-300: #A0AEC0;
+  --gray-400: #718096;
+  --gray-500: #4A5568;
+  --gray-600: #2D3748;
+  --gray-700: #2D3748; /* Bordas e separadores */
+  --gray-800: #2D3748; /* Fundo de cartões e áreas destacadas */
+  --gray-900: #1A202C; /* Fundo principal do site */
 
   /* 🌿 Cores Primárias (cores fixas - NÃO mudam com o tema) */
-  --primary-light: #4de7b7; /* Usado para realces suaves */
-  --primary: #0da170; /* Cor principal do projeto */
-  --primary-dark: #065f46; /* Usado em hovers e elementos ativos */
+  --primary-light: #A7F3D0; /* Usado para realces suaves */
+  --primary: #38B2AC; /* Cor principal do projeto */
+  --primary-dark: #2C7A7B; /* Usado em hovers e elementos ativos */
 
   /* 🔗 Links */
-  --link-color: #10b981; /* Cor padrão dos links */
-  --link-hover: #0b8a60; /* Cor dos links ao passar o mouse */
+  --link-color: #38B2AC; /* Cor padrão dos links */
+  --link-hover: #2C7A7B; /* Cor dos links ao passar o mouse */
 
   /* 🚦 Alertas (cores fixas, usadas para feedbacks visuais) */
   --success: #22c55e; /* Indica sucesso (verde) */
@@ -53,21 +53,21 @@
   --info: #0ea5e9; /* Indica informação (azul) */
 
   /* 🎨 Texto sobre fundos coloridos (para garantir contraste) */
-  --text-over-primary: #0a0f1a; /* Texto sobre fundo primário */
-  --text-over-primary-dark: #e6e9f0; /* Texto sobre variação escura */
-  --text-over-primary-light: #0a0f1a; /* Texto sobre variação clara */
-  --text-over-success: #0a0f1a; /* Texto sobre fundo sucesso */
-  --text-over-warning: #0a0f1a; /* Texto sobre fundo alerta */
-  --text-over-error: #e6e9f0; /* Texto sobre fundo erro */
-  --text-over-info: #0a0f1a; /* Texto sobre fundo informativo */
+  --text-over-primary: #1A202C; /* Texto sobre fundo primário */
+  --text-over-primary-dark: #E2E8F0; /* Texto sobre variação escura */
+  --text-over-primary-light: #1A202C; /* Texto sobre variação clara */
+  --text-over-success: #1A202C; /* Texto sobre fundo sucesso */
+  --text-over-warning: #1A202C; /* Texto sobre fundo alerta */
+  --text-over-error: #E2E8F0; /* Texto sobre fundo erro */
+  --text-over-info: #1A202C; /* Texto sobre fundo informativo */
 
   /* 📝 Cores do Texto (dinâmicas) */
-  --text-default: #e6e9f0; /* Cor padrão do texto */
-  --text-muted: #aab3cc; /* Texto menos importante (placeholders, labels, etc.) */
+  --text-default: #E2E8F0; /* Cor padrão do texto */
+  --text-muted: #A0AEC0; /* Texto menos importante (placeholders, labels, etc.) */
 
   /* 🚫 Cores para botões e elementos desativados */
-  --disabled: #555f7d; /* Cor de fundo de elementos desativados */
-  --text-disabled: #aab3cc; /* Texto de botões ou inputs desativados */
+  --disabled: #4A5568; /* Cor de fundo de elementos desativados */
+  --text-disabled: #A0AEC0; /* Texto de botões ou inputs desativados */
 
   /* 🔔 Cores do Toastify (notificações) */
   --toastify-color-light: var(--text-default);
@@ -76,8 +76,8 @@
   --toastify-color-success: var(--success);
   --toastify-color-warning: var(--warning);
   --toastify-color-error: var(--error);
-  --toastify-text-color-light: #0a0f1a;
-  --toastify-text-color-dark: #e6e9f0;
+  --toastify-text-color-light: #1A202C;
+  --toastify-text-color-dark: #E2E8F0;
   --toastify-color-progress-light: var(--primary);
   --toastify-color-progress-dark: var(--primary);
 }
@@ -85,25 +85,25 @@
 /* 🌞 Modo Claro - Inverte algumas cores para manter o contraste */
 :root[data-theme="light"] {
   /* Tons de Cinza Invertidos */
-  --gray-100: #0a0f1a; /* Cinza mais escuro */
-  --gray-200: #181f2e;
-  --gray-300: #272f43;
-  --gray-400: #363d56;
-  --gray-500: #454f6a;
-  --gray-600: #555f7d;
-  --gray-700: #aab3cc;
-  --gray-800: #cdd3e1;
-  --gray-900: #e6e9f0; /* Fundo principal claro */
+  --gray-100: #1A202C;
+  --gray-200: #2D3748;
+  --gray-300: #4A5568;
+  --gray-400: #718096;
+  --gray-500: #A0AEC0;
+  --gray-600: #CBD5E0;
+  --gray-700: #E2E8F0;
+  --gray-800: #EDF2F7;
+  --gray-900: #F7FAFC; /* Fundo principal claro */
 
   /* 📝 Texto no modo claro */
-  --text-default: #0a0f1a; /* Texto principal no modo claro */
-  --text-muted: #272f43; /* Texto menos importante */
+  --text-default: #1A202C; /* Texto principal no modo claro */
+  --text-muted: #4A5568; /* Texto menos importante */
 
   /* 🔗 Links no modo claro */
-  --link-color: #0b8a60;
-  --link-hover: #065f46;
+  --link-color: #2C7A7B;
+  --link-hover: #38B2AC;
 
   /* 🔔 Toastify no modo claro */
-  --toastify-text-color-light: #e6e9f0;
-  --toastify-text-color-dark: #e6e9f0;
+  --toastify-text-color-light: #F7FAFC;
+  --toastify-text-color-dark: #F7FAFC;
 }
