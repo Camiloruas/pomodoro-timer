@@ -1,5 +1,4 @@
 import { Container } from "../../Container";
-import { CountDown } from "../../CountDown";
 import { Footer } from "../../Footer";
 import { Logo } from "../../Logo";
 import { Menu } from "../../Menu";

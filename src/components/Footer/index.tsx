@@ -29,7 +29,7 @@ export function Footer() {
               'new Date()' cria um objeto de data com a data e hora atuais.
               '.getFullYear()' é um método desse objeto que retorna o ano com quatro dígitos.
               Isso garante que o ano de copyright seja sempre o ano atual. */}
-          Chronos Pomodoro © {new Date().getFullYear()} — by Camilo Ruas
+          Focus Pomodoro © {new Date().getFullYear()} — by Camilo Ruas
         </a>
       </footer>
     </footer>

@@ -83,7 +83,7 @@
 }
 
 /* 🌞 Modo Claro - Inverte algumas cores para manter o contraste */
-:root[data-theme='light'] {
+:root[data-theme="light"] {
   /* Tons de Cinza Invertidos */
   --gray-100: #0a0f1a; /* Cinza mais escuro */
   --gray-200: #181f2e;
@@ -106,3 +106,4 @@
   /* 🔔 Toastify no modo claro */
   --toastify-text-color-light: #e6e9f0;
   --toastify-text-color-dark: #e6e9f0;
+}
