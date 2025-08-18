@@ -7,6 +7,7 @@ import { MainTemplate } from "../../components/templates/MainTemplates";
 import styles from "./styles.module.css";
 import { useTaskContext } from "../../contexts/TaskContext/useTaskContext";
 import { formatDate } from "../../utils/formatDate";
+import { getTaskStatus } from "../../utils/getTaskStatus";
 
 export function History() {
   const { state } = useTaskContext();
