@@ -57,14 +57,14 @@ export function Menu() {
         >
           <HistoryIcon />
         </RouterLink>
-        <a
+        <RouterLink
           className={styles.menuLink}
-          href="#"
+          href="/settings"
           aria-label="Configurações "
           title="Configurações"
         >
           <SettingsIcon />
-        </a>
+        </RouterLink>
         <a
           className={styles.menuLink}
           href="#"
