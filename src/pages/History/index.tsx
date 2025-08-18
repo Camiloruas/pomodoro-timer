@@ -38,10 +38,9 @@ export function History() {
     }));
   }, [state.tasks]);
 
-     useEffect(() => {
-    document.title = 'Histórico - Focus Pomodoro';
+  useEffect(() => {
+    document.title = "Histórico - Focus Pomodoro";
   }, []);
-
 
   useEffect(() => {
     if (!confirmClearHistory) return;
@@ -67,7 +66,7 @@ export function History() {
 
   function handleResetHistory() {
     showMessage.dismiss();
-    showMessage.confirm("Tem certeza?", (confirmation) => {
+    showMessage.confirm("Tem certeza que deseja excluir?", (confirmation) => {
       setConfirmClearHistory(confirmation);
     });
   }
